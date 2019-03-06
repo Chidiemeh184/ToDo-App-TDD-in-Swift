@@ -12,7 +12,12 @@
 		EF41113E222ACFE60048902C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF41113C222ACFE60048902C /* Main.storyboard */; };
 		EF411140222ACFE80048902C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF41113F222ACFE80048902C /* Assets.xcassets */; };
 		EF411143222ACFE80048902C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF411141222ACFE80048902C /* LaunchScreen.storyboard */; };
-		EF41114E222ACFE80048902C /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41114D222ACFE80048902C /* ToDoTests.swift */; };
+		EF41115C222AD8F80048902C /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41115B222AD8F80048902C /* ToDoItemTests.swift */; };
+		EF41115F222ADA670048902C /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF41115E222ADA670048902C /* ToDoItem.swift */; };
+		EF411161222F09E90048902C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF411160222F09E90048902C /* Location.swift */; };
+		EF411163222F0B8E0048902C /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF411162222F0B8E0048902C /* LocationTests.swift */; };
+		EF411165222F0EEA0048902C /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF411164222F0EEA0048902C /* ItemManagerTests.swift */; };
+		EF411167222F0F890048902C /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF411166222F0F890048902C /* ItemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +39,13 @@
 		EF411142222ACFE80048902C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF411144222ACFE80048902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF411149222ACFE80048902C /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF41114D222ACFE80048902C /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
 		EF41114F222ACFE80048902C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF41115B222AD8F80048902C /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
+		EF41115E222ADA670048902C /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		EF411160222F09E90048902C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EF411162222F0B8E0048902C /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		EF411164222F0EEA0048902C /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
+		EF411166222F0F890048902C /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		EF411137222ACFE60048902C /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				EF41115D222ADA370048902C /* Model */,
 				EF411138222ACFE60048902C /* AppDelegate.swift */,
 				EF41113A222ACFE60048902C /* ViewController.swift */,
 				EF41113C222ACFE60048902C /* Main.storyboard */,
@@ -90,10 +101,30 @@
 		EF41114C222ACFE80048902C /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF41114D222ACFE80048902C /* ToDoTests.swift */,
+				EF41115A222AD8DC0048902C /* Model */,
 				EF41114F222ACFE80048902C /* Info.plist */,
 			);
 			path = ToDoTests;
+			sourceTree = "<group>";
+		};
+		EF41115A222AD8DC0048902C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF41115B222AD8F80048902C /* ToDoItemTests.swift */,
+				EF411162222F0B8E0048902C /* LocationTests.swift */,
+				EF411164222F0EEA0048902C /* ItemManagerTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF41115D222ADA370048902C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF41115E222ADA670048902C /* ToDoItem.swift */,
+				EF411160222F09E90048902C /* Location.swift */,
+				EF411166222F0F890048902C /* ItemManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF41113B222ACFE60048902C /* ViewController.swift in Sources */,
+				EF411167222F0F890048902C /* ItemManager.swift in Sources */,
 				EF411139222ACFE60048902C /* AppDelegate.swift in Sources */,
+				EF411161222F09E90048902C /* Location.swift in Sources */,
+				EF41115F222ADA670048902C /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF41114E222ACFE80048902C /* ToDoTests.swift in Sources */,
+				EF411165222F0EEA0048902C /* ItemManagerTests.swift in Sources */,
+				EF411163222F0B8E0048902C /* LocationTests.swift in Sources */,
+				EF41115C222AD8F80048902C /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
