@@ -28,6 +28,9 @@
 		EFBD73922241629D00435EBD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBD73912241629D00435EBD /* MapKit.framework */; };
 		EFBD73942241AE0E00435EBD /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD73932241AE0E00435EBD /* InputViewControllerTests.swift */; };
 		EFBD73962241AEB500435EBD /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD73952241AEB500435EBD /* InputViewController.swift */; };
+		EFBD73982242807B00435EBD /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD73972242807B00435EBD /* APIClientTests.swift */; };
+		EFBD739A224280D200435EBD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD7399224280D200435EBD /* APIClient.swift */; };
+		EFBD739C2242852D00435EBD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD739B2242852D00435EBD /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		EFBD73912241629D00435EBD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EFBD73932241AE0E00435EBD /* InputViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewControllerTests.swift; sourceTree = "<group>"; };
 		EFBD73952241AEB500435EBD /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		EFBD73972242807B00435EBD /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		EFBD7399224280D200435EBD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EFBD739B2242852D00435EBD /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		EF411137222ACFE60048902C /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				EFBD7399224280D200435EBD /* APIClient.swift */,
 				EF41116C2236E8A30048902C /* Controller */,
 				EF41115D222ADA370048902C /* Model */,
 				EF411138222ACFE60048902C /* AppDelegate.swift */,
@@ -123,6 +130,7 @@
 		EF41114C222ACFE80048902C /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
+				EFBD73972242807B00435EBD /* APIClientTests.swift */,
 				EF4111692236E7BA0048902C /* Controller */,
 				EF41115A222AD8DC0048902C /* Model */,
 				EF41114F222ACFE80048902C /* Info.plist */,
@@ -146,6 +154,7 @@
 				EF41115E222ADA670048902C /* ToDoItem.swift */,
 				EF411160222F09E90048902C /* Location.swift */,
 				EF411166222F0F890048902C /* ItemManager.swift */,
+				EFBD739B2242852D00435EBD /* Token.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,9 +300,11 @@
 				EFBD73962241AEB500435EBD /* InputViewController.swift in Sources */,
 				EF411167222F0F890048902C /* ItemManager.swift in Sources */,
 				EF4111702236F1C00048902C /* ItemListDataProvider.swift in Sources */,
+				EFBD739A224280D200435EBD /* APIClient.swift in Sources */,
 				EF411139222ACFE60048902C /* AppDelegate.swift in Sources */,
 				EF411161222F09E90048902C /* Location.swift in Sources */,
 				EF41117422391C640048902C /* ItemCell.swift in Sources */,
+				EFBD739C2242852D00435EBD /* Token.swift in Sources */,
 				EF41115F222ADA670048902C /* ToDoItem.swift in Sources */,
 				EF41116E2236E8F10048902C /* ItemListViewController.swift in Sources */,
 				EFBD738F22415C1900435EBD /* DetailViewController.swift in Sources */,
@@ -310,6 +321,7 @@
 				EFBD73942241AE0E00435EBD /* InputViewControllerTests.swift in Sources */,
 				EF41116B2236E7E00048902C /* ItemsListViewControllerTest.swift in Sources */,
 				EF411163222F0B8E0048902C /* LocationTests.swift in Sources */,
+				EFBD73982242807B00435EBD /* APIClientTests.swift in Sources */,
 				EF41115C222AD8F80048902C /* ToDoItemTests.swift in Sources */,
 				EFBD738D22415B2F00435EBD /* DetailViewControllerTests.swift in Sources */,
 			);
